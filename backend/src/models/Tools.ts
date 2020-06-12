@@ -11,10 +11,7 @@ const ToolSchema:Schema = new Schema({
   title: String,
   description: String,
   link: String,
-  tags: {
-    type: String,
-    lowercase: true
-  }
+  tags: [String]
 });
 
 const Tool = mongose.model<ITool>('Tools', ToolSchema);

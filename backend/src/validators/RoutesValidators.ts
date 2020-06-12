@@ -7,7 +7,7 @@ const validators = {
       title: Joi.string().required(),
       description: Joi.string().required(),
       link: Joi.string().required(),
-      tags: Joi.string().lowercase().required()
+      tags: Joi.array()
     })
   }),
   searchTags: celebrate({

@@ -29,7 +29,7 @@ export default {
       title,
       description,
       link,
-      tags:parsedTags
+      tags: parsedTags
     });
 
     return response.status(201).json(tool);
